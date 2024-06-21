@@ -22,13 +22,11 @@
         float: left;
         /* border: 3px solid red; */
     }
-    .center{
-        height: 700px;
-        width: 910px;
+    .center {
+        height: auto;
+        max-width: 1100px;
         background-color: white;
-        float: left;
-        margin-top: 20px;
-        /* border: 3px solid rgb(46, 24, 24); */
+        margin: 0 auto;
     }
     .left{
         height: 700px;
@@ -41,7 +39,7 @@
     .header{
         height: 200px;
         width: 100%;
-        margin-top: 80px;
+        /* margin-top: 80px; */
         /* border: 2px solid red; */
     }
     .img{
@@ -69,10 +67,11 @@
         text-decoration: none;
     
     }
-    .section{
-        height: 550px;
-        width: 100%;
+    .section {
+        height: auto;
+        max-width: 100%;
         background-color: rgb(189, 119, 183);
+        padding: 0px 20px;
     }
     h1{
         text-align: center;
@@ -80,15 +79,18 @@
     }
     .text{
         float: left;
-
-
+        display: flex;
+        margin-bottom: 20px
+    }
+    h2 {
+        margin-top: 20px;
     }
     .image{
         height: 200px;
         width: 300px;
         float: right;
-        padding-left: 20px;
-        
+        /* padding-left: 20px; */
+        border-radius: 10px;
        margin-left: 50px;
     }
     hr{
@@ -98,9 +100,6 @@
 
 </style>
 <body>
-    <div class="right">
-    
-    </div>
     <div class="center">
         <header class="header">
             <img class="img" src="./happyTooth.jpg" alt="helo">
@@ -117,10 +116,16 @@
         </header>
         <section class="section">
             <h1>Kids</h1>
-            <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos atque incidunt adipisci illum deleniti excepturi corporis vel exercitationem cupiditate quae assumenda, fuga quidem cum, nisi maiores vitae aliquam unde voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore iure quas explicabo<br> minima numquam, ipsum recusandae earum quis qui est saepe vitae aliquid ducimus aut omnis, ad quae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, aperiam, eius recusandae nobis earum iste pariatur corporis atque consequatur eos reprehenderit sit non. Ut, quas fuga enim ad accusantium numquam nisi eveniet, aperiam facere ratione quos inventore nesciunt impedit tempora nemo mollitia cumque nobis voluptatibus reiciendis, et animi dolores. Hic.
-                <img class="image" src="./images.jfif" alt="">
-                
+            <div class="text-image">
+                <div class="text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos atque incidunt adipisci illum deleniti excepturi corporis vel exercitationem cupiditate quae assumenda, fuga quidem cum, nisi maiores vitae aliquam unde voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore iure quas explicabo <br><br> minima numquam, ipsum recusandae earum quis qui est saepe vitae aliquid ducimus aut omnis, ad quae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, aperiam, eius recusandae nobis earum iste pariatur corporis atque consequatur eos reprehenderit sit non. Ut, quas fuga enim ad accusantium numquam nisi eveniet, aperiam facere ratione quos inventore nesciunt impedit tempora nemo mollitia cumque nobis voluptatibus reiciendis, et animi dolores. Hic.
+                    </p>
+                    
+                    <img class="image" src="./images.jfif" alt="">
+                </div>
             </div>
+            
             <hr>
               <h2>how do i care for my childs primary teeth</h2>
                 <p>
@@ -134,7 +139,5 @@
     </div>
 
    
-    
-    <div class="left"></div>
 </body>
 </html>
